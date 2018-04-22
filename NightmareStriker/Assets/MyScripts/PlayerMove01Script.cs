@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerMove01Script : MonoBehaviour
 {
@@ -52,7 +51,14 @@ public class PlayerMove01Script : MonoBehaviour
 		}
 		//玩家收到伤害后,身体由红色变白色
 		playerSki.material.color = Color.Lerp (playerSki.material.color, Color.white, 0.1f);
-	}
+
+
+        //测试脚本
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            ReductionBlood(200f);
+        }
+    }
 
 	/// <summary>
 	/// 掉血

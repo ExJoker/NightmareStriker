@@ -41,7 +41,7 @@ public class GunBarrelEndScript : MonoBehaviour
 				//射击目标点
 				Vector3 target = hitInfo.point;
 				lineRenderer.SetPosition (1, target);
-				//游戏物体打中怪物
+				//通过tag值判断游戏物体打中怪物
 				if (hitInfo.collider.tag == "ZomBear") {
 					hitInfo.collider.GetComponent<ZombunnyMoveScript> ().ZDamage (30f);
 					if (hitInfo.collider.GetComponent<ZombunnyMoveScript> ().Z_HP <= 0) {

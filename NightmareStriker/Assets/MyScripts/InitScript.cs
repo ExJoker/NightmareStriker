@@ -8,17 +8,16 @@ public class InitScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        Time.timeScale = 1f;
+    }
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        
+    }
 
 
     public void BeginGame()
     {
-        Time.timeScale = 1f;
         SceneManager.LoadScene(1);
     }
 }
