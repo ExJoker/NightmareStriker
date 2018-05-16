@@ -43,7 +43,7 @@ public class ZombunnyMoveScript : MonoBehaviour
 
 	void Update ()
 	{
-		if (Vector3.Distance (transform.position, player.position) < 5f) {
+		if (Vector3.Distance (transform.position, player.position) < 2.5f) {
 			nav.isStopped = true;
 			ZAnim.SetBool (z_move, false);
 		} else {

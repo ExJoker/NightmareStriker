@@ -1,4 +1,4 @@
 sceneSetups:
-- path: H:/Projects/ZZU170703/ZZU170703/SeniorLesson_FSM02/Assets/Scenes/MainScene.unity
+- path: Assets/MyScenes/NightmareStriker.unity
   isLoaded: 1
   isActive: 1

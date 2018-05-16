@@ -93,6 +93,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="NightmareStriker.Plugins.csproj">
+      <Project>{AFF5ADB6-8C7B-C918-9D70-B9B556CCFCC2}</Project>
+      <Name>NightmareStriker.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\MyScripts\CameraFOLLOWScript.cs" />
     <Compile Include="Assets\MyScripts\GunBarrelEndScript.cs" />
     <Compile Include="Assets\MyScripts\InitScript.cs" />
@@ -146,26 +152,6 @@
     <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\Core\Serialization\SimpleZipReplacement.cs" />
     <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\Core\Serialization\TinyJson.cs" />
     <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\Core\astarclasses.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\Example11_RVO\GroupController.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\Example11_RVO\LightweightRVO.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\Example11_RVO\RVOAgentPlacer.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\Example11_RVO\RVOExampleAgent.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\Example12_Procedural\ProceduralGridMover.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\Example12_Procedural\ProceduralWorld.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\Example13_Moving\BezierMover.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\Example13_Moving\LocalSpaceGraph.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\Example13_Moving\LocalSpaceRichAI.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\Example8_PathTypes\PathTypesDemo.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\ExampleScripts\AIFollow.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\ExampleScripts\AstarSmoothFollow2.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\ExampleScripts\DoorController.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\ExampleScripts\DynamicGridObstacle.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\ExampleScripts\MineBotAI.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\ExampleScripts\NavmeshClamp.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\ExampleScripts\ObjectPlacer.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\ExampleScripts\RecastTileUpdate.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\ExampleScripts\RecastTileUpdateHandler.cs" />
-    <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\ExampleScripts\TargetMover.cs" />
     <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\Generators\Base.cs" />
     <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\Generators\GridGenerator.cs" />
     <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\Generators\LayerGridGraphGenerator.cs" />
@@ -229,21 +215,10 @@
     <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\Utilities\ProfileHelper.cs" />
     <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\Utilities\UnityReferenceHelper.cs" />
     <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\changelog.cs" />
-    <Compile Include="Assets\NightmareStriker\MobileInput\Scripts\CrossPlatformInputManager.cs" />
-    <Compile Include="Assets\NightmareStriker\MobileInput\Scripts\Joystick.cs" />
-    <Compile Include="Assets\NightmareStriker\MobileInput\Scripts\MobileControlRig.cs" />
-    <Compile Include="Assets\NightmareStriker\MobileInput\Scripts\PlatformSpecific\MobileInput.cs" />
-    <Compile Include="Assets\NightmareStriker\MobileInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
-    <Compile Include="Assets\NightmareStriker\MobileInput\Scripts\VirtualInput.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NightmareStriker\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
     <None Include="Assets\NightmareStriker\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader" />
-    <None Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\Example8_PathTypes\SquareShader.shader" />
-    <None Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
-    <None Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\Materials\Projector Light.shader" />
-    <None Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
-    <None Include="Assets\NightmareStriker\AstarPathfindingProject\ExampleScenes\_Example Scenes.txt" />
     <None Include="Assets\NightmareStriker\AstarPathfindingProject\Plugins\Clipper\ClipperLicense.txt" />
     <None Include="Assets\NightmareStriker\AstarPathfindingProject\Plugins\DotNetZip\DotNetZipLicense.txt" />
     <None Include="Assets\NightmareStriker\AstarPathfindingProject\Plugins\Poly2Tri\Poly2TriLicense.txt" />
@@ -253,6 +228,10 @@
     <None Include="Assets\NightmareStriker\AstarPathfindingProject\link.xml" />
     <None Include="Assets\NightmareStriker\Fonts\LuckiestGuy\LICENSE.txt" />
     <None Include="Assets\NightmareStriker\Shaders\Rim Lit Bumped Specular.shader" />
+    <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
