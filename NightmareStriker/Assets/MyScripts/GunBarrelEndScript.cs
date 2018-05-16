@@ -20,8 +20,6 @@ public class GunBarrelEndScript : MonoBehaviour
 		ps = this.GetComponentInChildren<ParticleSystem> ();
 		lineRenderer = GetComponent<LineRenderer> ();
 		aus = GetComponent<AudioSource> ();
-
-
 	}
 
 

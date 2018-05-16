@@ -30,7 +30,7 @@ public class TextScript : MonoBehaviour
 		}
 		playerHP.text = "HP:" + hp;
 		if (hp == 0) {
-			Time.timeScale = 0;
+			//Time.timeScale = 0;
 			regame.gameObject.SetActive (true);
 		}
 	}

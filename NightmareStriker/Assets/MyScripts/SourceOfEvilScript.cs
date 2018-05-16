@@ -11,7 +11,6 @@ public class SourceOfEvilScript : MonoBehaviour
 	//定时器
 	float timer = 0;
 
-
 	void Update ()
 	{
 		timer += Time.deltaTime;
@@ -23,13 +22,7 @@ public class SourceOfEvilScript : MonoBehaviour
 			timer = 0;
         }
 
-
-
         
-       
 		
 	}
-
-
-
 }

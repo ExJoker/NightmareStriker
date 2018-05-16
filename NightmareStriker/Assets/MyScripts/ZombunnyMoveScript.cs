@@ -27,6 +27,7 @@ public class ZombunnyMoveScript : MonoBehaviour
 	SphereCollider sphCollider;
 
 
+
 	void Start ()
 	{
 		capCollider = GetComponent<CapsuleCollider> ();
@@ -52,6 +53,10 @@ public class ZombunnyMoveScript : MonoBehaviour
 			transform.LookAt (player.position);
 			ZAnim.SetBool (z_move, true);
 		}
+        if (player.GetComponent<PlayerMove01Script>().HP<=0)
+        {
+            nav.isStopped = true;
+        }
 	}
 	//怪物收到的伤害
 	public void ZDamage (float damage)
