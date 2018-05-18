@@ -93,13 +93,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\MyScripts\CameraFOLLOWScript.cs" />
-    <Compile Include="Assets\MyScripts\GunBarrelEndScript.cs" />
-    <Compile Include="Assets\MyScripts\InitScript.cs" />
-    <Compile Include="Assets\MyScripts\PlayerMove01Script.cs" />
-    <Compile Include="Assets\MyScripts\SourceOfEvilScript.cs" />
-    <Compile Include="Assets\MyScripts\TextScript.cs" />
-    <Compile Include="Assets\MyScripts\ZombunnyMoveScript.cs" />
+    <ProjectReference Include="NightmareStriker.Plugins.csproj">
+      <Project>{AFF5ADB6-8C7B-C918-9D70-B9B556CCFCC2}</Project>
+      <Name>NightmareStriker.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\MyScripts\AStar\FindPath.cs" />
+    <Compile Include="Assets\MyScripts\AStar\Grid.cs" />
+    <Compile Include="Assets\MyScripts\AStar\Node.cs" />
+    <Compile Include="Assets\MyScripts\Enemy\SourceOfEvilScript.cs" />
+    <Compile Include="Assets\MyScripts\Enemy\TextScript.cs" />
+    <Compile Include="Assets\MyScripts\Enemy\ZombunnyMoveScript.cs" />
+    <Compile Include="Assets\MyScripts\FSM\AIController.cs" />
+    <Compile Include="Assets\MyScripts\FSM\Attack.cs" />
+    <Compile Include="Assets\MyScripts\FSM\BulletManager.cs" />
+    <Compile Include="Assets\MyScripts\FSM\CameraFollowScript.cs" />
+    <Compile Include="Assets\MyScripts\FSM\Chase.cs" />
+    <Compile Include="Assets\MyScripts\FSM\FSM.cs" />
+    <Compile Include="Assets\MyScripts\FSM\FSMManager.cs" />
+    <Compile Include="Assets\MyScripts\FSM\FSMState.cs" />
+    <Compile Include="Assets\MyScripts\FSM\Patrol.cs" />
+    <Compile Include="Assets\MyScripts\FSM\PlayerHealth.cs" />
+    <Compile Include="Assets\MyScripts\FSM\PlayerMovement.cs" />
+    <Compile Include="Assets\MyScripts\FSM\PlayerShoot.cs" />
+    <Compile Include="Assets\MyScripts\Player\CameraFOLLOWScript.cs" />
+    <Compile Include="Assets\MyScripts\Player\GunBarrelEndScript.cs" />
+    <Compile Include="Assets\MyScripts\Player\InitScript.cs" />
+    <Compile Include="Assets\MyScripts\Player\PlayerMove01Script.cs" />
     <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\Core\AI\AILerp.cs" />
     <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\Core\AI\AIPath.cs" />
     <Compile Include="Assets\NightmareStriker\AstarPathfindingProject\Core\AI\NavmeshController.cs" />
@@ -222,6 +243,10 @@
     <None Include="Assets\NightmareStriker\AstarPathfindingProject\link.xml" />
     <None Include="Assets\NightmareStriker\Fonts\LuckiestGuy\LICENSE.txt" />
     <None Include="Assets\NightmareStriker\Shaders\Rim Lit Bumped Specular.shader" />
+    <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
