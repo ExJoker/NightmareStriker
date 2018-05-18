@@ -135,17 +135,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="NightmareStriker.Plugins.csproj">
-      <Project>{AFF5ADB6-8C7B-C918-9D70-B9B556CCFCC2}</Project>
-      <Name>NightmareStriker.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="NightmareStriker.csproj">
       <Project>{F770A997-D70B-F58D-E033-E3D860501D2C}</Project>
       <Name>NightmareStriker</Name>
-    </ProjectReference>
-    <ProjectReference Include="NightmareStriker.Editor.Plugins.csproj">
-      <Project>{B0B6FCCF-27A4-4989-9EE9-9269413E10BD}</Project>
-      <Name>NightmareStriker.Editor.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -186,10 +178,6 @@
     <None Include="Assets\NightmareStriker\AstarPathfindingProject\link.xml" />
     <None Include="Assets\NightmareStriker\Fonts\LuckiestGuy\LICENSE.txt" />
     <None Include="Assets\NightmareStriker\Shaders\Rim Lit Bumped Specular.shader" />
-    <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
-    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

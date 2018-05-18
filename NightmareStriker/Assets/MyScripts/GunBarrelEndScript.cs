@@ -12,7 +12,9 @@ public class GunBarrelEndScript : MonoBehaviour
 	//声音组件
 	AudioSource aus;
 
-	public int score = 0;
+    public GameObject CompletePanel;
+
+	public int score;
 
 	void Start ()
 	{
@@ -71,7 +73,7 @@ public class GunBarrelEndScript : MonoBehaviour
 	//弹道的时间为0.05f
 	IEnumerator LR ()
 	{
-		yield return new WaitForSeconds (0.05F);
+		yield return new WaitForSeconds (0.05f);
 		lineRenderer.enabled = false;
 	}
 	//播放声音组件

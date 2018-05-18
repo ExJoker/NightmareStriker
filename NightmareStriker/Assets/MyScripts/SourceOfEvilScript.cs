@@ -11,11 +11,13 @@ public class SourceOfEvilScript : MonoBehaviour
 	//定时器
 	float timer = 0;
 
-	void Update ()
+    public int interval ;
+
+    void Update ()
 	{
 		timer += Time.deltaTime;
 
-		if (timer > 5f) {
+		if (timer > interval) {
           Transform go =  Instantiate (zombunnyPrafab[0], 
 				transform.position, Quaternion.identity) ;
             go.SetParent(transform);

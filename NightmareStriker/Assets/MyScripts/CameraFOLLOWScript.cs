@@ -18,7 +18,7 @@ public class CameraFOLLOWScript : MonoBehaviour
     void Update ()
 	{
 		//得到摄像机要移动到的目标位置
-		targetPos = followPlayer.position + Vector3.up * 3.5f + Vector3.forward * 7f;
+		targetPos = followPlayer.position + Vector3.up * 3.5f - Vector3.forward * 7f;
 		//设置摄像机的位置
 		transform.position = Vector3.Lerp (transform.position, targetPos, Time.deltaTime * amooth);
 		//摄像机看向游戏物体
@@ -30,10 +30,21 @@ public class CameraFOLLOWScript : MonoBehaviour
 
         }
 
+
     }
-  
-
-
+    public  void  GameComplete()
+    {
+        if (SceneManager.GetActiveScene().name == "Level01")
+        {
+            SceneManager.LoadScene(2);
+        }
+        if (SceneManager.GetActiveScene().name == "Level02")
+        {
+            SceneManager.LoadScene(3);
+        }
+        sources[0].gameObject.SetActive(false);
+        sources[1].gameObject.SetActive(false);
+    }
  
 
 
